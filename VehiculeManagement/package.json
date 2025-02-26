@@ -1,0 +1,30 @@
+{
+  "name": "fleet-management",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "bun run src/cli.ts",
+    "lint": "eslint  --ext .ts",
+    "test": "bun run cucumber-js",
+    "test:integration": "bun run cucumber-js --profile integration",
+    "format": "prettier --write "
+  },
+  "dependencies": {
+    "@types/cucumber": "^7.0.3",
+    "bun-types": "^1.2.3",
+    "commander": "^13.1.0",
+    "drizzle-orm": "^0.39.3"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@types/commander": "^2.12.5",
+    "@types/node": "^22.13.5",
+    "@types/bun": "^1.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.5.2",
+    "typescript": "^5.7.3"
+  }
+}

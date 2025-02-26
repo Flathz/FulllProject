@@ -1,0 +1,20 @@
+{
+  "default": {
+    "paths": ["features/**/*.feature"],
+    "require": ["step-definitions/**/*.ts"],
+    "format": ["progress"],
+    "tags": "not @critical",
+    "formatOptions": {
+      "snippetInterface": "synchronous"
+    }
+  },
+  "integration": {
+    "paths": ["features/**/*.feature"],
+    "require": ["step-definitions/**/*.ts"],
+    "format": ["progress"],
+    "tags": "@critical",
+    "formatOptions": {
+      "snippetInterface": "synchronous"
+    }
+  }
+}
